@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Jeu-T M R</title>
+		<link rel="stylesheet" type="text/css" href="TMRcss.css">
+		<script src="TMRjs.js"></script>
+	</head>
+	<body>
+		<header><h1>Terrien Martien Robot</h1></header>
+		<div class="scoreAffichage">
+			<div class="nom">
+				<span id="joueur">Joueur</span><span id="ordinateur">Ordinateur</span>
+			</div>
+			<span id="score-joueur">0  </span>:<span id="score-ordinateur">  0</span>
+		</div>
+		<div class"tour"> <p></p>
+		</div>
+		<div class="options">
+			<div id="T" class="option" onclick="match("T")"> <img src="bonbonastronaut.png" height="60px" width="60px"> </img> </div>
+			<div id="M" class="option" onclick="match("M")"> <img src="bonbonmartien.png" height="60px" width="60px"> </img> </div>
+			<div id="R" class="option" onclick="match("R")"> <img src="bonbonrobot.png" height="60px" width="60px"> </img> </div>
+		</div>
+		<div id="boite">
+			<p class="message" id="resultat">C'est le jeu de Terrien, Martien, Robot! </p><br /><hr><p class="message"> Rappel toi:<br />Terrien ==> Robot ==> Martien ==> Terrien</p>
+		</div>
+	</body>
+</html>

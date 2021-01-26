@@ -1,0 +1,33 @@
+<html>
+<head>
+	<script type="text/javascript" src="imageAcces.js"></script>
+	<style>
+		img:hover{
+			-webkit-animation:tourne 2s linear infinite;
+    	    animation:tourne 2s linear infinite;
+		}
+		@-webkit-keyframes tourne { 
+			0% { -webkit-transform:rotate(60deg); }
+			20% { -webkit-transform: rotate(120deg);}
+			40% { -webkit-transform: rotate(180deg);}
+			60% { -webkit-transform: rotate(240deg);}
+			80% { -webkit-transform: rotate(300deg);}
+			100% { -webkit-transform: rotate(360deg); }
+		 }
+		@keyframes tourne {
+			0% { transform:rotate(60deg);}
+			20% { transform: rotate(120deg);}
+			40% { transform: rotate(180deg);}
+			60% { transform: rotate(240deg);}
+			80% { transform: rotate(300deg);}
+			100% { transform: rotate(360deg); }
+		}
+
+	</style>
+</head>
+<div>
+	<a href="../page.html" target="_top">
+		<img draggable="false" src="image/telescope_icon.jpg" height="75%" width="80%">
+	</a>
+</div>
+</html>

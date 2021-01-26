@@ -1,0 +1,37 @@
+<html>
+<head> 
+	<script type="text/javascript" src="imageAcces.js"></script>
+	<link rel="stylesheet" type="text/css" href="diaporama.css"></head>
+<body>
+	<div height="200px">
+	<button name="precedant" type="button" onclick="prec();" style="padding:0;">
+		<img src="fleche_gauche.png" height="200px" width="50px"></button>
+	
+
+	<img id="diapositive" draggable="false" src="" height="400px" width="700px"  style="padding:0;"></img>
+
+	
+	<button name="suivant" type="button" onclick="suiv();" style="padding:0;">
+		<img src="fleche_droite.png" height="200px" width="50px"></button>
+	</div>
+	<script> 
+		var photo = [ "photo1.jpg" , "photo2.jpg" , "photo3.jpg" , "photo4.jpg" , "photo5.jpg" , "photo6.jpg" , "photo7.jpg" , "photo8.jpg" , "photo9.jpg" , "photo10.jpg" , "photo11.jpg", "photo12.png", "photo13.png", "photo14.png"];
+		var n = 0;
+		diapositive.src = photo[n];
+		function prec(){
+			var diapositive = document.getElementById("diapositive");
+			n--;
+			if(n < 0){
+				n = photo.length-1; }
+			diapositive.src = photo[n]; }
+
+		function suiv(){
+			var diapo = document.getElementById("diapositive");
+			n++;
+			if(n >= photo.length){
+				n=0; }
+			diapositive.src = photo[n]; }
+			
+	</script>
+</body>
+</html>

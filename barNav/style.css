@@ -1,0 +1,15 @@
+a::before{
+	content: url('image/telescope1.png');
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	}
+
+a.hover{
+	color: #222;
+}
+body{
+	background: rgba(78, 48, 153, 0.5);
+}

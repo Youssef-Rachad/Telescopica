@@ -1,0 +1,22 @@
+
+@font-face{
+	font-family: Space Mono;
+	src: url(SpaceMono-Regular.ttf);
+	format(ttf);
+}
+
+
+
+body{
+	background-image: url(image/space_title.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Space Mono', monospace;
+	color: #fff;
+	}
+
+#titre{
+	margin: 90px 0;
+	font-size: 80px;
+
+}
